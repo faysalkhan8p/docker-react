@@ -1,4 +1,8 @@
 sudo : required
 services:
   - docker
-  
+before_install: 
+  - docker build -t faysalkhan8p/docker-react -f Dockerfile.dev .
+
+script:
+  - dokcer run faysalkhan8p/docker-react npm run test -- --coverage
