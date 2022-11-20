@@ -9,7 +9,7 @@ script:
 
 deploy:
   provider: elasticbeanstack
-  edge: true
+  # edge: true
   region: "ap-southeast-1"
   app: "docker"
   env: "Docker-env"
@@ -21,4 +21,4 @@ deploy:
   # secret_access_key:
   #   secure: "$AWS_SECRET_KEY"
   secret_access_key: "$AWS_SECRET_KEY"
-  skip_cleanup: true
+  # skip_cleanup: true
